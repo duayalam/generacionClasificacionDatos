@@ -76,10 +76,10 @@ public class GenerateInfoFiles {
         writer.close();  
     }
 
-    // Método para generar un archivo de productos
+    // Method to generate a product file
     public static void createProductsFile(int productsCount) throws IOException {
-        FileWriter writer = new FileWriter("data/products.txt");  // Archivo para almacenar información de productos
-        Random random = new Random();  // Generador de números aleatorios
+        FileWriter writer = new FileWriter("data/products.txt");  // File to store product information
+        Random random = new Random();  // Random number generator
 
         // Method to generate a product file
         for (int i = 1; i <= productsCount; i++) {
@@ -117,7 +117,7 @@ public class GenerateInfoFiles {
                     while ((line = salesReader.readLine()) != null) {
                         String[] parts = line.split(";");  
                         int productId = Integer.parseInt(parts[0]);  // ID del producto
-                        int quantity = Integer.parseInt(parts[1]);  // Cantidad vendida
+                        int quantity = Integer.parseInt(parts[1]);  // Quantity sold
                         totalSales += productPrices.get(productId) * quantity;  // Total sales for this seller
                     }
                     salesReader.close();  
@@ -130,8 +130,8 @@ public class GenerateInfoFiles {
         List<Map.Entry<String, Double>> sortedSalesmen = new ArrayList<>(salesBySalesman.entrySet());
         sortedSalesmen.sort((e1, e2) -> Double.compare(e2.getValue(), e1.getValue()));  
 
-        // Crear archivo de reporte
-        FileWriter reportWriter = new FileWriter("data/ReporteVentas.csv");  // CSV Reporte
+        // Create report file
+        FileWriter reportWriter = new FileWriter("data/ReporteVentas.csv");  // CSV report
         for (Map.Entry<String, Double> entry : sortedSalesmen) {
             reportWriter.write(entry.getKey() + ";" + String.format("%.2f", entry.getValue()) + "\n");  
         }
