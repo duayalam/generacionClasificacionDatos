@@ -1,0 +1,18 @@
+Este proyecto nos permitió desarrollar a nivel profesional:
+
+Aplicar conceptos clave de programación en Java, como la gestión de archivos y la generación de reportes automatizados.
+Desarrollar habilidades esenciales para el manejo eficiente de datos, útiles en cualquier entorno profesional.
+Automatizar procesos repetitivos, como la creación de informes de ventas o el almacenamiento de información de clientes.
+Optimizar el tiempo de trabajo y reducir errores manuales, algo muy valioso en empresas que manejan grandes volúmenes de datos.
+Los retos que enfrentamos fueron:
+
+Manejar correctamente los errores al crear y leer archivos, ya que al principio no controlábamos bien los posibles fallos.
+Generar datos aleatorios que resultaran realistas y útiles para las pruebas.
+Alinear correctamente los datos en el archivo CSV, pues al inicio no quedaban legibles.
+Reorganizar el código dividiéndolo en métodos más pequeños para hacerlo más claro y fácil de mantener.
+
+
+Resumen de lo aprendido 
+Durante el desarrollo de este proyecto se obtuvieron conocimientos sobre la manipulación de archivas en JAVA, nos permitió generar datos simulados o aleatorios con el fin de probar el sistema. Se emplearon clases FileWriter, BufferedReader y Random que permitieron generar archivos estructurados y de manera automática, permitiendo la organización de información de vendedores productos en archivos de texto y generar reportes efectivos de las ventas lo que facilita la toma de decisiones dentro de una empresa.
+Por otra parte, cabe resaltar la importancia de la generación de datos aleatorios dentro del proyecto empleado con la clase Random. Este complemento permite generar datos que nos sirven para probar un sistema en las fases del desarrollo y pruebas sin la necesidad de contar con una base de datos permitiendo validar el funcionamiento del sistema antes de su implementación en un entorno productivo.
+Reforzo la implementación de técnicas de programación modular, de forma tal que sus funcionalidades están separadas en métodos independientes, lo que en un entorno de desarrollo facilita la escalabilidad y el mantenimiento del código.
